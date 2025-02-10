@@ -1,0 +1,78 @@
+*{
+    text-decoration: none;
+}
+.header-wa img{
+    height: 40px;
+}
+.header-wa{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: green;
+    color: aliceblue;
+    font-weight: bold;
+}
+.overlay-wa{
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+}
+.overlay-wa img{
+    height: 80px;
+}
+.view-whastapp{
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 128, 0, 0.733);
+    background-color: white;
+    bottom: 60px;
+    right: 90px;
+    box-shadow: 2px 2px 2px green;
+    
+}
+.card-item{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(236, 226, 226, 0.623);
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px grey;
+    margin: 10px;
+    padding: 10px;
+}
+.card-item:hover{
+    margin-bottom: 15px;
+}
+.view-whastapp a{
+    gap: 20px;
+
+}
+.name .hubungi{
+    font-size: 15px;
+    color: rgba(206, 206, 4, 0.815);
+    font-weight: normal;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: bold;
+}
+.card-item img{
+    height: 50px;
+
+}
+
+@media (max-width: 360px){
+    .overlay-wa{
+        position: fixed;
+        right: 0;
+        /* top: 590px; */
+    }
+    .overlay-wa img{
+        height: 90px;
+    }
+
+}
