@@ -37,42 +37,7 @@
     </div>
     <div class="search-container">
         <input type="text" class="search-input" placeholder="Cari menu..." onkeyup="filterMenu(this.value)">
-        <div class="search-suggestions">
-            <div class="suggestion-item">
-                <img src="nasgor.jpg" alt="Nasi Goreng">
-                <div class="item-details">
-                    <div class="item-name">Nasi Goreng</div>
-                    <div class="item-price">Rp 12,000</div>
-                </div>
-            </div>
-            <div class="suggestion-item">
-                <img src="mie ayam.jpg" alt="Mie Ayam">
-                <div class="item-details">
-                    <div class="item-name">Mie Ayam</div>
-                    <div class="item-price">Rp 15,000</div>
-                </div>
-            </div>
-            <div class="suggestion-item">
-                <img src="sate-ayam.jpg" alt="Sate Ayam">
-                <div class="item-details">
-                    <div class="item-name">Sate Ayam</div>
-                    <div class="item-price">Rp 15,000</div>
-                </div>
-            </div>
-            <div class="suggestion-item">
-                <img src="nasi lemak.jpg" alt="Nasi Lemak">
-                <div class="item-details">
-                    <div class="item-name">Nasi Lemak</div>
-                    <div class="item-price">Rp 15,000</div>
-                </div>
-            </div>
-            <div class="suggestion-item">
-                <img src="naspad.jpg" alt="Nasi Padang">
-                <div class="item-details">
-                    <div class="item-name">Nasi Padang</div>
-                    <div class="item-price">Rp 35,000</div>
-                </div>
-            </div>
+        <!-- <div class="search-suggestions">
             <div class="suggestion-item">
                 <img src="ayam bkr.jpg" alt="Ayam Bakar">
                 <div class="item-details">
@@ -101,42 +66,41 @@
                     <div class="item-price">Rp 45,000</div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
+
+
+
+
+
+
     <div class="container">
         <h1>Menu Best Seller</h1>
         <div class="grid">
             <div class="card">
-                <img src="nasgor.jpg" alt="Makanan 1">
-                <h3>Nasi Goreng</h3>
-                <p>Harga: Rp 12,000</p>
-                <button onclick="addToCart('Nasi Goreng', 12000, 'nasgor.jpg')">Ready</button>
-            </div>
-
-            <div class="card">
-                <img src="mie ayam.jpg" alt="Makanan 2">
-                <h3>Mie Ayam</h3>
+                <img src="pecal ayam.jpg" alt="Makanan 2">
+                <h3>Pecal ayam komplit</h3>
                 <p>Harga: Rp 15,000</p>
                 <button onclick="addToCart('Mie Ayam', 15000, 'mie ayam.jpg')">Ready</button>
             </div>
 
             <div class="card">
-                <img src="sate-ayam.jpg" alt="Makanan 3">
-                <h3>Sate Ayam</h3>
+                <img src="udang.jpg" alt="Makanan 3">
+                <h3>Udang crispy saus padang</h3>
                 <p>Harga: Rp 15,000</p>
                 <button onclick="addToCart('Sate Ayam', 15000, 'sate-ayam.jpg')">Ready</button>
             </div>
 
             <div class="card">
-                <img src="nasi lemak.jpg" alt="Makanan 4">
-                <h3>Nasi Lemak</h3>
+                <img src="blackpaper.jpg" alt="Makanan 4">
+                <h3>Chicken katsu saus blackpapper</h3>
                 <p>Harga: Rp 15,000</p>
                 <button onclick="addToCart('Nasi Lemak', 15000, 'nasi lemak.jpg')">Ready</button>
             </div>
 
             <div class="card">
-                <img src="naspad.jpg" alt="Makanan 5">
-                <h3>Nasi Padang</h3>
+                <img src="saus padang.jpg" alt="Makanan 5">
+                <h3>Chicken steak saus bbq</h3>
                 <p>Harga: Rp 35,000</p>
                 <button onclick="addToCart('Nasi Padang', 35000, 'naspad.jpg')">Ready</button>
             </div>
@@ -147,23 +111,13 @@
                 <p>Harga: Rp 30,000</p>
                 <button onclick="addToCart('Ayam Bakar', 30000, 'ayam bkr.jpg')">Ready</button>
             </div>
-
-            <div class="card">
-                <img src="ayam geprek.jpg" alt="Makanan 7">
-                <h3>Ayam Geprek</h3>
-                <p>Harga: Rp 25,000</p>
-                <button onclick="addToCart('Ayam Geprek', 25000, 'ayam geprek.jpg')">Ready</button>
-            </div>
-
-            <div class="card">
-                <img src="ayam pnyet.jpg" alt="Makanan 7">
-                <h3>Ayam Penyet</h3>
-                <p>Harga: Rp 40,000</p>
-                <button onclick="addToCart('Ayam Penyet', 40000, 'ayam pnyet.jpg')">Ready</button>
-            </div>
         </div>
+
+
+
+
         <section class="all-menu">
-            <a href="">Lihat Semua Menu</a>
+            <a href="all-menu.html">Lihat Semua Menu</a>
         </section>
 
         <div class="wa-float" id="waButton">
@@ -183,7 +137,7 @@
                         <p>Pemesanan & Reservasi</p>
                     </div>
                 </a>
-                <a href="https://wa.me/0987654321" class="wa-contact">
+                <a href="https://wa.me/+6285355974064" class="wa-contact">
                     <img src="wa overlay.png" alt="WhatsApp">
                     <div class="wa-contact-info">
                         <h4>Customer Service</h4>
@@ -382,8 +336,8 @@
     });
 
     // Close overlay when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!waButton.contains(e.target) && !waOverlay.contains(e.target) && isOverlayVisible) {
+    document.addEventListener('click', (p) => {
+        if (!waButton.contains(p.target) && !waOverlay.contains(e.target) && isOverlayVisible) {
             isOverlayVisible = false;
             waOverlay.classList.remove('active');
         }
